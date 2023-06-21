@@ -1,0 +1,16 @@
+Research and analyze which of the vulnerabilities appear to be related to the code that was deployed for the environment in this project.
+
+WebAppSG: 
+    - Security groups should not allow ingress from 0.0.0.0/0 to port 22
+    - Security groups should not allow unrestricted access to ports with high risk
+
+EC2 Instance:
+    - EC2 instances should not allow ingress from 0.0.0.0/0 to port 22
+    - EC2 instances should be managed by AWS Systems Manager
+    - Application Load Balancer should be configured to redirect all HTTP requests to HTTPS
+    - Application load balancer should be configured to drop http headers
+
+S3:
+    - S3 Block Public Access setting should be enabled
+
+Bonus - provide recommendations on how to remediate the vulnerabilities.
